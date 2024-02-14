@@ -1,14 +1,13 @@
+require("dotenv").config();
 const http = require("http");
 const { Server } = require("socket.io");
 const cors = require("cors");
 const OpenAI = require("openai");
 
-const chatGptApiKey = "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";
-// const chatGptApiKey = "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";
+const chatGptApiKey = process.env.OPENAI_API_KEY;
 
-// const configuration = new Configuration({
-//   apiKey: chatGptApiKey,
-// });
+console.log("test", chatGptApiKey);
+
 const openai = new OpenAI({
   apiKey: chatGptApiKey,
 });
