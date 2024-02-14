@@ -38,7 +38,8 @@ const getTurn = (players, turn) => {
 
 const io = new Server(httpServer, {
   cors: {
-    origin: "http://localhost:3000", // Replace with your frontend URL
+    // origin: "http://localhost:3000", // Replace with your frontend URL
+    origin: "https://www.nownidhi.com/",
     methods: ["GET", "POST"],
     // allowedHeaders: ["my-custom-header"],
     credentials: true,
