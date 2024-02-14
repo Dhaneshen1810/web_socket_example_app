@@ -89,9 +89,9 @@ const getWinner = () => {
 
 const io = new Server(httpServer, {
   cors: {
-    origin: "http://localhost:3000",
+    // origin: "http://localhost:3000",
     // origin: "https://www.nownidhi.com",
-    // origin: "https://alex-game.vercel.app",
+    origin: "https://alex-game.vercel.app",
     methods: ["GET", "POST"],
     // allowedHeaders: ["my-custom-header"],
     credentials: true,
